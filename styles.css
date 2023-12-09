@@ -102,9 +102,9 @@ nav {
 
 @media (max-width: 768px) {
         .menu_link {
-            font-size: 3.1vw;
-            padding: 0.2rem 0.2rem;
-            border-radius: 8px;
+            font-size: 3vw;
+            padding: 0.5rem 0.26rem;
+            border-radius: 13px;
          }
     }
 
@@ -200,14 +200,14 @@ footer {
     .boss-image {
         height: 40vh;
         margin: 0 auto; /* Centralizing margin */
-        margin-bottom: 15px; /* Providing space between the image and the following text */
+        margin-bottom: 5px; /* Providing space between the image and the following text */
     }
 
     .boss-info {
-        font-size: 110%;
+        font-size: 100%;
         box-sizing: border-box; /* Include padding and border in the element's total width and height */
         width: auto;
-        padding: 10px 10px 10px 10px;
+        padding: 3px 3px 3px 3px;
         height: auto;
         max-width: none;
     }
@@ -278,6 +278,15 @@ a.email {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a slight shadow for effect */
 }
 
+@media (max-width: 768px) {
+    .contact-info {
+        font-size: 18px;
+        padding: 1em 1em 1em 1em;
+    }
+    .contact-info h2 {
+        font-size: 123%;
+    }
+}
 
 /*----------------------------------- BANK INFORMATION -----------------------------------*/
 .bank-info {
@@ -365,7 +374,6 @@ tbody tr:nth-child(even) {
 .main-vehicles { /*Body*/
     display: flex;
     justify-content: center;
-    padding: 20px;
 }
 
 .car-category-container { /*Car image + link + label */
