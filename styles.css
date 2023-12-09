@@ -422,7 +422,7 @@ tbody tr:nth-child(even) {
     border-right:solid 2px #ccc;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 782px) {
     
     .main-vehicles {
         flex-direction: column; /*Remove this attribute to make the cars stack up in to 2x2 */;
