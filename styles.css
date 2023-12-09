@@ -47,7 +47,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 84vh;
+    height: 83vh;
     letter-spacing: 1px;
     line-height: 2;
   }
@@ -99,7 +99,7 @@ nav {
 .menu_link:hover {
     transform: translateY(-3px);
     box-shadow: 0 7px 20px rgba(255, 69, 0, 0.6);
-}
+}       
 
 @media (max-width: 768px) {
         .menu_link {
