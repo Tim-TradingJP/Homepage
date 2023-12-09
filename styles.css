@@ -28,6 +28,10 @@ body {
     min-height: 100vh;
 }
 
+footer {
+    position: fixed;
+}
+
 /* ----------------------------------- Fancy Title ----------------------------------- */
 .page-title {
     font-family: "Cairo";
@@ -52,6 +56,12 @@ body {
     font-size: 7em;
     margin: 10px 0;
   }
+
+@media screen {max-width: 768px)
+    .page-title {
+        height: 80vh;
+    }
+}
  
 /*----------------------------------- NAV - MENU BUTTONS ----------------------------------- */
 nav {
