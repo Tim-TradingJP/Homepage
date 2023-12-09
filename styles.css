@@ -93,6 +93,7 @@ nav {
     border-radius: 18px;
     box-shadow: 0 5px 15px rgba(255, 69, 0, 0.5);
     transition: transform 0.2s, box-shadow 0.2s;
+    margin-inline: 2px;
 }
 
 .menu_link:hover {
@@ -103,8 +104,9 @@ nav {
 @media (max-width: 768px) {
         .menu_link {
             font-size: 3vw;
-            padding: 0.5rem 0.26rem;
-            border-radius: 13px;
+            padding: 0.1rem 0.26rem;
+            border-radius: 18 px;
+            margin-inline: 1px;
          }
     }
 
