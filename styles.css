@@ -1,0 +1,456 @@
+/* Importing fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cairo');
+
+header {
+    background: rgba(255, 255, 255, 0.05);
+    text-align: center;
+    padding: 1.5rem 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* Set the background image */
+    background-image: url('img/fuji1.jpeg');
+
+    /* Center and scale the image nicely */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Ensure the body covers the full viewport */
+    margin: 0;
+    height: 100%;
+    min-height: 100vh;
+}
+
+/* ----------------------------------- Fancy Title ----------------------------------- */
+.page-title {
+    font-family: "Cairo";
+    text-align: center;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 86vh;
+    letter-spacing: 1px;
+    line-height: 2;
+  }
+  
+  .page-title-h1 {
+    background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+    background-size: cover;
+    color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    font-size: 7em;
+    margin: 10px 0;
+  }
+ 
+/*----------------------------------- NAV - MENU BUTTONS ----------------------------------- */
+nav {
+    display: flex;
+    justify-content: center;
+    font-family: "Cairo";
+    padding-bottom: 3px;
+    white-space: nowrap;
+}
+
+.menu_link {
+    display: inline-block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem 2.5vw;
+    background: linear-gradient(120deg, #ff4500, #ff6347);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 18px;
+    box-shadow: 0 5px 15px rgba(255, 69, 0, 0.5);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.menu_link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 20px rgba(255, 69, 0, 0.6);
+}
+
+  /* Responsive adjustments */
+  @media (max-width: 1000px) {  /* This is for devices with width less than or equal to 768px, adjust as needed */
+    .page-title-h1 {
+      font-size: 50px;  /* Reduce the font size on smaller screens */
+    }
+    .page-title {
+      padding: 1vw 2vh;  /* Add some padding at the top and bottom */
+    }
+  }
+  /* styling the buttons */
+  .white-mode {
+    text-decoration: none;
+    padding: 7px 10px;
+    background-color: #122;
+    border-radius: 3px;
+    color: #FFF;
+    transition: .35s ease-in-out;
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    font-family: "Montserrat";
+  }
+  .white-mode:hover {
+    background-color: #FFF;
+    color: #122;
+  }
+
+
+@media (max-width: 700px) {
+    .menu_link {
+        font-size: 3vw;
+        padding: 0.2rem 0.3rem;
+        border-radius: 12px;
+    }
+}
+
+main {
+    padding: 0 rem 5%;
+}
+
+h1, h2 {
+    margin: 0;
+    letter-spacing: 1.5px;
+    font-family: "Cairo";
+}
+
+footer {
+    background: rgba(5, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px 0;  /* reduced padding */
+    width: 100%;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;  /* adjust font size if necessary */
+    margin-top: 0;
+    margin-bottom: -10px;
+}
+
+/*----------------------------------- INDEX ----------------------------------- */
+.GTR-Picture {
+    width: 100%;
+    max-width: 100%; /* Ensure it doesn't exceed its container */
+    display: block;
+    margin: 0 auto; /* Center the images if they are smaller than the container */
+    box-shadow: 0px 0px 5px #ccc;
+}
+
+/*----------------------------------- ABOUT US ----------------------------------- */
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.boss-image {
+    height: 50vh;
+    min-height: 20vh;
+}
+
+.boss-info {
+    width: 50vw;
+    height: 50vh;
+    font-size: 18px;      
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.8);
+}
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column; /* Stack items vertically */
+        align-items: baseline;
+    }
+
+    .boss-image {
+        height: 40vh;
+        margin: 0 auto; /* Centralizing margin */
+        margin-bottom: 15px; /* Providing space between the image and the following text */
+    }
+
+    .boss-info {
+        font-size: 110%;
+        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        width: auto;
+        padding: 10px 10px 10px 10px;
+        height: auto;
+    }
+}
+
+
+/*----------------------------------- CONTACT US -----------------------------------*/
+.contact-info {
+    max-width: 450px;
+    margin: 1em auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.contact-info h2 {
+    margin-top: 0;
+    font-size: 1.8em;
+}
+
+.contact-info p {
+    font-size: 1em;
+    margin-bottom: 1em;
+    color: #333;
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: none;
+}
+
+a.email {
+    color: blue;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.Contact_US_Email {
+    color: blue;
+}
+
+.facebook-link {
+    display: inline-block;
+    background-color: #4267B2;
+    color: white;
+    padding: 0.5em 0.8em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.facebook-link:hover {
+    background-color: #365899;
+}
+
+.image-container {
+    text-align: center; /* Centers the image */
+    margin: 0.1em 0; /* Adds some spacing above and below the image */
+}
+
+.thumbs-up {
+    max-width: 100%; /* Makes sure the image doesn’t exceed the container’s width */
+    height: auto; /* Maintains the aspect ratio of the image */
+    border-radius: 10px; /* Optional: Rounds the corners of the image */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a slight shadow for effect */
+}
+
+
+/*----------------------------------- BANK INFORMATION -----------------------------------*/
+.bank-info {
+    background: rgba(247, 246, 246, 0.8);
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+table {
+    /* Set a maximum width for your tables, for example, 70%. */
+    max-width: 60vw;
+    width: auto; /* This will make the table width as big as its content but not larger than max-width */
+    margin-left: auto; /* These two lines will center your table. */
+    margin-right: auto;
+
+    /* Other existing styles */
+    font-size: 20px;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    background-color: rgba(131, 128, 128, 0.7);
+    border-radius: 10px;
+    overflow: hidden; /* to make sure border-radius applies to table rows as well */
+
+    /* Add this if you want to keep columns in line */
+    table-layout: fixed;
+}
+
+@media screen and (max-width: 1000px) {
+    table {
+        font-size: 18px;
+        max-width: 70vw;
+    }
+}
+
+.table-header1 {
+    background-color: blue;
+}
+
+.table-header2 {
+    background-color: red;
+}
+
+.table-header3 {
+    background-color: green;
+}
+
+.table-header4 {
+    background-color: #d6ff00;
+}
+
+th, td {
+    padding: 1rem 1.5rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+}
+
+th {
+    background-color: rgba(173, 171, 171, 0.8);
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 0.85em;
+}
+
+tbody tr:hover {
+    background-color: rgba(235, 215, 215, 0.1);
+    transition: background-color 0.3s;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(250, 247, 247, 0.125);
+}
+
+@media screen and (max-width: 1000px) {
+    .responsive-table {
+        overflow-x: auto;
+    }
+}
+
+
+/*----------------------------------- VEHICLES ----------------------------------- */
+
+.main-vehicles {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.car-category-container {
+    width: calc(50vh - 80px); /* Subtracting for a margin */
+    margin: 5px; /* Added a small margin for spacing */
+    position: relative;
+}
+
+.car-category {
+    width: 90%;
+    max-width: 100%; /* Ensure it doesn't exceed its container */
+    display: block;
+    margin: 0 auto; /* Center the images if they are smaller than the container */
+    box-shadow: 0px 0px 5px #ccc;
+}
+
+.car-category:hover {
+   transform: scale(1.05);
+   border-color: gold;
+}
+
+.car-label {
+    position: absolute;
+    bottom: 10px;
+    left: 8%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.car-image {
+    max-width: 40vh;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    object-fit: contain;
+    max-height: 40%; /* Set height to 50% of the viewport's height */
+    transition: transform 0.3s, border-color 0.3s;
+    padding:0;
+    margin:0;
+    margin-left: auto;
+    margin-right: auto;
+    height:auto;
+    border-top:solid 2px #aaa;
+    border-left:solid 2px #aaa;
+    border-bottom:solid 2px #ccc;
+    border-right:solid 2px #ccc;
+}
+
+@media screen and (max-width: 1000px) {
+    .car-category-container {
+        width: 100%;
+        display: flex;
+    }
+    
+    .car-label {
+        left: 18%;
+        font-size: font-size: 2.4vw;
+    }
+}
+
+.car-image:hover {
+    transform: scale(1.05);
+    border-color: gold;
+}
+
+#frame{
+    position:relative;
+    padding:0;
+    margin:0;
+    border:solid 15px #555; 
+    max-width:600px;
+    margin:40px auto;
+    box-shadow:-3px -3px 12px #999;
+    
+    }
+#border{
+    position:relative;
+    padding:0;
+    margin:0;
+    border:solid 70px white;
+   box-shadow:-3px -3px 12px #999;
+    } 
+ 
+/*----------------------------------- OUR LOCATIONS ----------------------------------- */
+.our-locations-main {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+}
+
+.our-locations-section {
+    padding-left: auto;
+    padding-right: auto;
+    text-align: center;
+    display: flex;
+    justify-content: baseline;
+    max-width: 900px;
+    align-items: center;
+}
+
+
+.our-locations-address {
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 20vw;
+    height: 35vh;
+    font-size: 100%;
+}
+
+.our-locations-googleMaps {
+    border: 0;
+    width: 70vw;
+    height: 35vh;
+}
