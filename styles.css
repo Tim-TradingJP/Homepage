@@ -104,12 +104,12 @@ nav {
 
 @media (max-width: 768px) {
   .menu_link {
-    font-size: 3.3vw;
+    font-size: 3.2vw;
     padding: 0.2rem 0.5vw;
-    border-radius: 2px;
+    border-radius: 4px;
     margin-inline: 0px;
-    border: 1px solid #122;
-    border-width: 10px;
+    border: 0px solid #122;
+    border-width: 0.1 px;
     margin-inline: 1px;
     margin-top: 0.75rem;
   }
@@ -341,7 +341,7 @@ table {
 }
 
 .down-arrow {
-  width: 4vh;
+  width: 30px;
   height: auto;
   float: right;
 }
@@ -358,10 +358,10 @@ td {
 
 th {
   background-color: rgba(179, 177, 177, 0.616);
-  font-weight: 420;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-size: 1.1em;
+  font-weight: 420;
+  font-size: 1em;
   padding: 10px;
 }
 
@@ -396,7 +396,7 @@ tbody tr:nth-child(even) {
     min-width: 90vw;
   }
   .down-arrow {
-    height: 6vh;
+    height: 30px;
     width: auto;
   }
 }
