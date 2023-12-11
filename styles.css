@@ -190,12 +190,12 @@ footer {
 }
 
 .boss-info {
-  width: 40vw;
+  width: 30vw;
   height: 50vh;
   font-size: 18px;
   text-align: center;
   background-color: rgba(252, 252, 252, 0.8);
-  max-width: 80vw;
+  max-width: 50vw;
 }
 /* Adjustments for smaller screens */
 @media (max-width: 768px) {
