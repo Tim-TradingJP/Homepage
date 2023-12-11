@@ -315,6 +315,7 @@ table {
   border-radius: 10px;
   overflow: hidden; /* to make sure border-radius applies to table rows as well */
   table-layout: fixed;
+  max-width: 80vw;
 }
 
 @media screen and (max-width: 768px) {
