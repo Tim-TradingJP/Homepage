@@ -229,6 +229,7 @@ footer {
   padding: 2em;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
+  dis
 }
 
 .contact-info h2 {
@@ -330,7 +331,7 @@ table {
 }
 
 .table-header2 {
-  background-color: red;
+  background-color: rgb(255, 94, 0);
 }
 
 .table-header3 {
@@ -339,6 +340,10 @@ table {
 
 .table-header4 {
   background-color: #d6ff00;
+}
+
+.table-header5 {
+  background-color: #ff0000;
 }
 
 .down-arrow {

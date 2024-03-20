@@ -50,6 +50,12 @@ collapse_button4.addEventListener("click", () => {
   rotatePicture(collapse_button4);
 });
 
+let collapse_button5 = document.querySelector(".collapse-button5");
+collapse_button5.addEventListener("click", () => {
+  hideTable(collapse_button5);
+  rotatePicture(collapse_button5);
+});
+
 function hideTable(collapse_button) {
   console.log("hello world");
   let tbody =
